@@ -73,6 +73,7 @@ button {
     margin-bottom: 24px;
     padding-left: 20px;
     height: 32px;
+    cursor: default;
 }
 
 .list__point:hover {
@@ -81,7 +82,6 @@ button {
     border-image-repeat: stretch;
     color: rgba(27, 28, 33, 0.5);
     transition: color 1s;
-    cursor: default;
 }
 
 .copy {
