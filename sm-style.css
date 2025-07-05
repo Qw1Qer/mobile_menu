@@ -5,7 +5,12 @@
     font-family: "TT Lakes" , sans-serif;
 }
 
-
+button {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
 .slide {
     display: flex;
     flex-direction: column;
@@ -26,7 +31,12 @@
 .top-board {
     display: flex;
     flex-direction: row;
+    margin-bottom: 46px;
 
+}
+.top-board__button {
+    margin-top: 12px;
+    margin-left: 24px;
 }
 
 .top-board__icon {
@@ -38,8 +48,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 23px;
-    margin-left: 24px;
 
 }
 
@@ -48,14 +56,13 @@
     margin-left: 17px;
 }
 
-.icon--right {
+.top-board__button--right {
     margin-left: 78px;
 }
 
 .list {
     display: flex;
     flex-direction: column;
-    margin-top: 46px;
 
 }
 
@@ -74,14 +81,17 @@
     border-image-repeat: stretch;
     color: rgba(27, 28, 33, 0.5);
     transition: color 1s;
+    cursor: default;
 }
 
 .copy {
     margin-left: 24px;
 
 }
-
-.copy__icon {
+.copy__button {
+    margin-left: 16px;
+}
+.copy__ref {
     background-color: #FF3E79;
     border: none;
     border-radius: 80%;
@@ -90,10 +100,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 16px;
 }
 
-.copy__icon:first-child {
+.copy__button:first-child {
     margin-left: 0;
 }
 
@@ -123,4 +132,5 @@
 .lang-choose--ru:hover,.lang-choose--en:hover,.lang-choose--ch:hover {
     opacity: 0.5;
     transition: opacity 1s;
+    cursor: default;
 }
