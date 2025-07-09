@@ -55,6 +55,8 @@ body {
 
 .top-board__logo {
     margin-left: 17px;
+    width: 97px;
+    height: 51px;
     align-self: center;
 }
 
