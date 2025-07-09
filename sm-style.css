@@ -13,7 +13,6 @@ button {
 }
 body {
     overflow-y: hidden;
-    height: 100vh;
 }
 .slide {
     display: flex;
@@ -29,9 +28,6 @@ body {
     color: #1B1C21;
     font-weight: 500;
     line-height: 24px;
-    -webkit-overflow-scrolling: touch;
-    overflow-y: auto;
-
 }
 
 .top-board {
@@ -73,6 +69,8 @@ a {
 .list {
     display: flex;
     flex-direction: column;
+    min-height: min-content;
+    flex: 1;
 
 }
 
@@ -92,6 +90,10 @@ a {
     border-image-repeat: stretch;
     color: rgba(27, 28, 33, 0.5);
     transition: color 1s;
+}
+.list__space {
+    flex: 1;
+    min-height: 10px;
 }
 
 .copy {
@@ -119,8 +121,8 @@ a {
 .slide__copy {
     display: flex;
     flex-direction: row;
-    margin-top: 240px;
     flex-wrap: wrap;
+
 }
 
 .list__lang {
@@ -133,6 +135,7 @@ a {
 
 .lang-choose {
     margin-top: 40px;
+    margin-bottom: 16px;
 }
 
 .lang-choose--en , .lang-choose--ch {
