@@ -13,6 +13,7 @@ button {
 }
 body {
     overflow-y: hidden;
+    height: 100vh;
 }
 .slide {
     display: flex;
@@ -28,6 +29,8 @@ body {
     color: #1B1C21;
     font-weight: 500;
     line-height: 24px;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
 
 }
 
