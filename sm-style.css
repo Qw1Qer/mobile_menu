@@ -33,11 +33,11 @@ body {
 .top-board {
     display: flex;
     flex-direction: row;
-    margin-bottom: 46px;
+    align-content: center;
+
 
 }
 .top-board__button {
-    margin-top: 12px;
     margin-left: 24px;
 }
 
@@ -54,8 +54,8 @@ body {
 }
 
 .top-board__logo {
-    margin-top: 19px;
     margin-left: 17px;
+    align-self: center;
 }
 
 .top-board__button--right {
@@ -83,6 +83,9 @@ a {
     height: 32px;
     cursor: default;
 }
+.list__point:last-child {
+    margin-bottom: 0;
+}
 
 .list__point:hover {
     border-image-source: url('assets/highlight.svg');
@@ -93,7 +96,22 @@ a {
 }
 .list__space {
     flex: 1;
-    min-height: 10px;
+    min-height: 0;
+}
+.slide__space1 {
+    flex: 1;
+    min-height: 0;
+    max-height: 46px;
+}
+.slide__space:first-child {
+    flex: 1;
+    min-height: 0;
+    max-height: 24px;
+}
+.lang__space {
+    flex: 1;
+     min-height: min-content;
+    max-height: 40px;
 }
 
 .copy {
@@ -132,10 +150,12 @@ a {
 .list__lang:nth-child(2) {
     word-spacing: -0.6px;
 }
+.lang {
+    min-height: min-content;
+}
 
 .lang-choose {
-    margin-top: 40px;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .lang-choose--en , .lang-choose--ch {
